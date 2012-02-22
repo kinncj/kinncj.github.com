@@ -103,11 +103,11 @@
             if (b.pushed_at < a.pushed_at) return -1;
             return 0;
           });
-		  i = 3;
-          $.each(repos.slice(0, i), function (i, repo) {
+		  j = 3;
+          $.each(repos.slice(0, j), function (i, repo) {
             if(repo.name == "kinncj.github.com")
             {
-              i = 4;
+              j = 4;
               continue;
             }
             addRecentlyUpdatedRepo(repo);
