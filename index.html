@@ -54,7 +54,7 @@
       }
 
       function addRepo(repo) {
-    	if(repo.name != "kinncj.github.com"){}
+    	if(repo.name != "kinncj.github.com")
 	        var $item = $("<li>").addClass("repo grid-1 " + (repo.language || '').toLowerCase());
 	        var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
 	        $link.append($("<h2>").text(repo.name));
