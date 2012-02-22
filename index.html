@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>Twitter &hearts; Open Source</title>
+    <title>KinnCJ's GitHub'</title>
     <link rel="stylesheet" type="text/css" href="assets/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/grid.css">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
@@ -62,7 +62,7 @@
         $item.appendTo("#repos");
       }
 
-      $.getJSON("https://api.github.com/orgs/kinncj/repos?callback=?", function (result) {
+      $.getJSON("https://api.github.com/kinncj/repos?callback=?", function (result) {
         var repos = result.data;
 
         $(function () {
@@ -108,7 +108,7 @@
         });
       });
 
-      $.getJSON("https://api.github.com/orgs/kinncj/members?callback=?", function (result) {
+      $.getJSON("https://api.github.com/kinncj/members?callback=?", function (result) {
         var members = result.data;
 
         $(function () {
