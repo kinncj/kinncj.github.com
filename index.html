@@ -62,7 +62,7 @@
         $item.appendTo("#repos");
       }
 
-      $.getJSON("https://api.github.com/kinncj/repos?callback=?", function (result) {
+      $.getJSON("https://api.github.com/users/kinncj/repos?callback=?", function (result) {
         var repos = result.data;
 
         $(function () {
@@ -108,7 +108,7 @@
         });
       });
 
-      $.getJSON("https://api.github.com/kinncj/members?callback=?", function (result) {
+      $.getJSON("https://api.github.com/users/kinncj/members?callback=?", function (result) {
         var members = result.data;
 
         $(function () {
@@ -210,8 +210,8 @@
       <div id="main" class="grid-1">
         <div id="logo"><h1>PHP and OpenSource Evangelist</h1></div>
         <h1></h1>
-        <p>Visit <a href="https://kinncj.com.br/">kinncj.com.br</a></p>
-        <p>Tweeter <a href="https://twitter.com/kinncj">@kinncj</a></p>
+        <p>Visit <a href="https://users/kinncj.com.br/">kinncj.com.br</a></p>
+        <p>Tweeter <a href="https://twitter.com/users/kinncj">@kinncj</a></p>
       </div>
 
       <div class="grid grid-3">
