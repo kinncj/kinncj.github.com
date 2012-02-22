@@ -103,8 +103,13 @@
             if (b.pushed_at < a.pushed_at) return -1;
             return 0;
           });
-
-          $.each(repos.slice(0, 3), function (i, repo) {
+		  var i = 3;
+          $.each(repos.slice(0, i), function (i, repo) {
+            if(repo.name == "kinncj.github.com")
+            {
+              i = 4;
+              continue;
+            }
             addRecentlyUpdatedRepo(repo);
           });
         });
@@ -222,7 +227,7 @@
           <p>
             <a href="https://github.com/kinncj/repositories"><span id="num-repos">&nbsp;</span> public repos</a>
             <br>
-            <a href="https://github.com/kinncj"><span id="num-members">&nbsp;</span> members</a>
+            <a href="https://github.com/kinncj"><span id="num-members">&nbsp;</span> followers</a>
           </p>
           <p class="email"><a href="mailto:kinncj@gmail.com">kinncj@gmail.com</a></p>
         </div>
